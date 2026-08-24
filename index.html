@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Independent experiments and technical notes on reliable infrastructure for agent systems by Bijan Pourriahi."
+    />
+    <meta name="theme-color" content="#0c1118" />
+    <meta property="og:title" content="Hermes — Reliable infrastructure for agent systems" />
+    <meta
+      property="og:description"
+      content="Independent experiments and technical notes by Bijan Pourriahi."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hermesagent.com/" />
+    <title>Hermes — Reliable infrastructure for agent systems</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="masthead">
+        <a class="wordmark" href="/" aria-label="Hermes home">
+          <span class="mark" aria-hidden="true">H</span>
+          <span>Hermes</span>
+        </a>
+        <a class="owner" href="https://beejmaxx.github.io">Bijan Pourriahi <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Independent technical exploration</p>
+        <h1 id="hero-title">Reliable infrastructure for agent systems.</h1>
+        <p class="lede">
+          Agents can execute tasks. The systems problem is supervising that execution:
+          preserving state, defining authority, recovering from failure, and retaining
+          evidence about what happened.
+        </p>
+        <nav class="primary-links" aria-label="Primary links">
+          <a class="button primary" href="https://github.com/beejmaxx/agent-supervisor">
+            Agent Supervisor <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button" href="https://beejmaxx.github.io/case-studies/agent-supervisor">
+            Read the case study <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </section>
+
+      <section class="thesis" aria-labelledby="thesis-title">
+        <div>
+          <p class="section-label">The observation</p>
+          <h2 id="thesis-title">Capability is moving faster than operational trust.</h2>
+        </div>
+        <p>
+          As models become capable enough to perform real work, the surrounding infrastructure
+          becomes more important: lifecycle management, tool boundaries, interruption,
+          durable history, and honest recovery when an outcome cannot be confirmed.
+        </p>
+      </section>
+
+      <section class="areas" aria-labelledby="areas-title">
+        <p class="section-label" id="areas-title">Areas of exploration</p>
+        <div class="area-grid">
+          <article>
+            <span class="index">01</span>
+            <h3>Lifecycle</h3>
+            <p>Start, observe, interrupt, replace, and recover external agent processes.</p>
+          </article>
+          <article>
+            <span class="index">02</span>
+            <h3>Authority</h3>
+            <p>Distinguish supervised effects from activity owned internally by a worker.</p>
+          </article>
+          <article>
+            <span class="index">03</span>
+            <h3>State</h3>
+            <p>Keep execution identity and semantic history outside any single agent runtime.</p>
+          </article>
+          <article>
+            <span class="index">04</span>
+            <h3>Evidence</h3>
+            <p>Record observed outcomes without claiming guarantees the supervisor cannot make.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="work" aria-labelledby="work-title">
+        <p class="section-label" id="work-title">Selected work</p>
+        <div class="work-list">
+          <a href="https://github.com/beejmaxx/agent-supervisor">
+            <span>
+              <strong>Agent Supervisor</strong>
+              <small>Rust experiments in lifecycle, authority, interruption, and recovery</small>
+            </span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://github.com/beejmaxx/polymarket-mcp-rs">
+            <span>
+              <strong>Polymarket MCP</strong>
+              <small>Typed agent tools, mutation gates, replay, and operational packaging</small>
+            </span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://github.com/beejmaxx/mcphub-rs">
+            <span>
+              <strong>MCPHub RS</strong>
+              <small>Supervised MCP gateway with policy and execution records</small>
+            </span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <nav aria-label="Personal links">
+          <a href="https://github.com/beejmaxx">GitHub</a>
+          <a href="https://beejmaxx.github.io">Portfolio</a>
+          <a href="https://beejmaxx.github.io/resume.pdf">Résumé</a>
+        </nav>
+        <p>
+          Independent work by Bijan Pourriahi. This is a personal site and is not affiliated
+          with Nous Research.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
