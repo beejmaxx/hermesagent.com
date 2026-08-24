@@ -2,8 +2,8 @@
 
 A small, independent landing page for technical work on reliable agent systems.
 
-The site deliberately avoids presenting Hermes as a company or product. It links to
-existing, reviewable engineering work and includes an explicit non-affiliation note.
+The site deliberately avoids presenting Hermes as a company or product. It identifies
+the work as an independent technical exploration and links to reviewable engineering.
 
 ## Local preview
 
@@ -15,7 +15,10 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080`.
 
-## Deployment
+## GitHub Pages
 
-The directory is ready for a Cloudflare Pages direct upload. No build command is
-required; the output directory is the repository root.
+The repository is published from the root of `main` at:
+
+`https://beejmaxx.github.io/hermesagent.com/`
+
+No build command is required.
