@@ -190,6 +190,7 @@ h1 {
 }
 
 .areas,
+.experiment,
 .work {
   padding: 92px 0;
   border-bottom: 1px solid var(--line);
@@ -228,6 +229,79 @@ h1 {
   max-width: 360px;
   margin-bottom: 0;
   color: var(--muted);
+}
+
+.experiment-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: clamp(36px, 7vw, 86px);
+  padding: clamp(28px, 5vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface-soft);
+}
+
+.experiment-status {
+  margin-bottom: 14px;
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.experiment h2 {
+  margin-bottom: 14px;
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 620;
+  letter-spacing: -.035em;
+  line-height: 1.1;
+}
+
+.experiment-summary > p:last-of-type {
+  max-width: 530px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.experiment-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 26px;
+  color: var(--accent-strong);
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.experiment-links a:hover {
+  color: var(--text);
+}
+
+.evidence-list {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.evidence-list li {
+  position: relative;
+  padding: 11px 0 11px 22px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.evidence-list li:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.evidence-list li::before {
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  content: "—";
 }
 
 .work-list {
@@ -323,6 +397,7 @@ footer p {
   }
 
   .areas,
+  .experiment,
   .work {
     padding: 72px 0;
   }
@@ -338,6 +413,10 @@ footer p {
 
   .area-grid h3 {
     margin-top: 34px;
+  }
+
+  .experiment-card {
+    grid-template-columns: 1fr;
   }
 
   .work-list a {

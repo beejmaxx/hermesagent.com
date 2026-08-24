@@ -86,6 +86,33 @@
         </div>
       </section>
 
+      <section class="experiment" aria-labelledby="experiment-title">
+        <p class="section-label">Implemented experiment</p>
+        <div class="experiment-card">
+          <div class="experiment-summary">
+            <p class="experiment-status">Current status · experimental</p>
+            <h2 id="experiment-title">Agent Supervisor</h2>
+            <p>
+              A Rust supervisor for testing lifecycle and authority boundaries around external
+              agents. It is an engineering experiment, not presented as production-ready.
+            </p>
+            <nav class="experiment-links" aria-label="Agent Supervisor technical material">
+              <a href="https://github.com/beejmaxx/agent-supervisor">Source ↗</a>
+              <a href="https://github.com/beejmaxx/agent-supervisor/blob/main/docs/architecture.md">Architecture ↗</a>
+              <a href="https://github.com/beejmaxx/agent-supervisor/blob/main/docs/acp-supervision-experiment.md">ACP experiment ↗</a>
+            </nav>
+          </div>
+          <ul class="evidence-list">
+            <li>ACP supervision of external agents</li>
+            <li>Durable attempt and lifecycle state</li>
+            <li>SQLite-backed execution history</li>
+            <li>Interruption and terminal-state handling</li>
+            <li>Explicit authority and trust tiers</li>
+            <li>Workspace evidence capture</li>
+          </ul>
+        </div>
+      </section>
+
       <section class="work" aria-labelledby="work-title">
         <p class="section-label" id="work-title">Selected work</p>
         <div class="work-list">
